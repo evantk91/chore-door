@@ -46,34 +46,33 @@ function randomChoreDoorGenerator() {
 }
 
 
-  doorImage1.onclick = function() {
+doorImage1.onclick = function() {
     if(currentlyPlaying && !isClicked(door1)) {
-      doorImage1.src = openDoor1;
-      playDoor(doorImage1);
+        doorImage1.src = openDoor1;
+        playDoor(doorImage1);
     }
-  }
+}
 
-  doorImage2.onclick = function() {
+doorImage2.onclick = function() {
     if(currentlyPlaying && !isClicked(door2)) {
-      doorImage2.src = openDoor2;
-      playDoor(doorImage2);
+        doorImage2.src = openDoor2;
+        playDoor(doorImage2);
     }
-  }
+}
 
-  doorImage3.onclick = function() {
+doorImage3.onclick = function() {
     if(currentlyPlaying && !isClicked(door3)) {
-      doorImage3.src = openDoor3;
-      playDoor(doorImage3);
+        doorImage3.src = openDoor3;
+        playDoor(doorImage3);
     }
-  }
-
+}
 
 const startButton = document.querySelector('#start');
 
-if(!currentlyPlaying) {
-  startButton.onclick = function() {
-    startRound()
-  }
+startButton.onclick = function() {
+    if(!currentlyPlaying) {
+        startRound()
+    }
 }
 
 function startRound() {
